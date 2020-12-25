@@ -1,7 +1,7 @@
 # Instalasi
 
 ```bash
-npx degit mzaini30/svelte my-project
+npx degit mzaini30/svelte-hash my-project
 cd my-project
 npm i
 ```
@@ -19,14 +19,6 @@ npm i
 ## CSS
 
 Menggunakan Bootstrap
-
-## Code splitting
-
-Cukup jalankan 
-
-```bash
-npm run build
-```
 
 ## Router berbasis file
 
