@@ -1,1 +1,1 @@
-<p><a href="/hello/Zen">Hello Zen</a></p>
+<p><a href="#/hello/Zen">Hello Zen</a></p>

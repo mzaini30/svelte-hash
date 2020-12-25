@@ -60,7 +60,7 @@ export default {
   output: {
     sourcemap: false,
     name: 'app',
-    entryFileNames: 'main.js',
+    // entryFileNames: 'main.js',
 
     // code splitting
     // format: 'es',
