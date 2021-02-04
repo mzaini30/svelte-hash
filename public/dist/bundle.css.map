@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "index.svelte",
+    "kucing.svelte"
+  ],
+  "sourcesContent": [
+    "<h1>Hai</h1>\n\n<svelte:head>\n\t<title>Haiiii~~~</title>\n</svelte:head>\n\n<style type=\"text/css\">\n\th1 {\n\t\tcolor: magenta;\n\t}\n</style>",
+    "<h1>Miauw</h1>\n\n<style type=\"text/css\">\n\th1 {\n\t\tcolor: blue;\n\t}\n</style>\n\n<svelte:head>\n\t<title>Miauw...</title>\n</svelte:head>"
+  ],
+  "names": [],
+  "mappings": "AAOC,EAAE,cAAC,CAAC,AACH,KAAK,CAAE,OAAO,AACf,CAAC;ACND,EAAE,eAAC,CAAC,AACH,KAAK,CAAE,IAAI,AACZ,CAAC"
+}

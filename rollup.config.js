@@ -4,8 +4,6 @@ import commonjs from '@rollup/plugin-commonjs'
 import livereload from 'rollup-plugin-livereload'
 import { terser } from 'rollup-plugin-terser'
 import hmr from 'rollup-plugin-hot'
-import alias from '@rollup/plugin-alias';
-import path from 'path';
 
 // Set this to true to pass the --single flag to sirv (this serves your
 // index.html for any unmatched route, which is a requirement for SPA
@@ -56,7 +54,7 @@ function serve() {
 }
 
 export default {
-  input: 'src/main.js',
+  input: 'src/index.js',
   output: {
     sourcemap: false,
     name: 'app',
@@ -73,17 +71,9 @@ export default {
 
     // bukan code splitting
     format: 'iife',
-    file: 'public/bundle.js',
+    file: 'public/dist/index.js',
   },
   plugins: [
-    alias({
-      entries: [
-        {
-          find: "@",
-          replacement: path.resolve(__dirname, "src/")
-        }
-      ]
-    }),
     svelte({
       // enable run-time checks when not in production
       dev: !isProduction,
@@ -92,7 +82,7 @@ export default {
       // NOTE when hot option is enabled, this gets automatically be turned to
       // false because CSS extraction doesn't work with HMR currently
       css: css => {
-        css.write('public/bundle.css') // diabaikan pas hmr
+        css.write('bundle.css') // diabaikan pas hmr
       },
       hot: isHot && {
         // Optimistic will try to recover from runtime
