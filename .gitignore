@@ -1,6 +1,8 @@
-.snowpack
-build
-node_modules
-src/.routify
-public/dist/bundle.css
-public/dist/index.js
+.DS_Store
+.routify
+/node_modules/
+/public/bundle.js
+/public/bundle.css
+/public/bundle.css.map
+
+.vercel
